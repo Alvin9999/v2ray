@@ -42,7 +42,7 @@ x86_64)
 	;;
 *)
 	echo -e " 
-	哈哈……这个 ${red}辣鸡脚本${none} 不支持你的系统。 ${yellow}(-_-) ${none}
+	哈哈……这个 ${red}安装脚本${none} 不支持你的系统。 ${yellow}(-_-) ${none}
 
 	备注: 仅支持 Ubuntu 16+ / Debian 8+ / CentOS 7+ 系统
 	" && exit 1
@@ -61,7 +61,7 @@ if [[ $(command -v apt-get) || $(command -v yum) ]] && [[ $(command -v systemctl
 else
 
 	echo -e " 
-	哈哈……这个 ${red}辣鸡脚本${none} 不支持你的系统。 ${yellow}(-_-) ${none}
+	哈哈……这个 ${red}安装脚本${none} 不支持你的系统。 ${yellow}(-_-) ${none}
 
 	备注: 仅支持 Ubuntu 16+ / Debian 8+ / CentOS 7+ 系统
 	" && exit 1
@@ -463,7 +463,7 @@ path_config() {
 		case $path in
 		*[/$]*)
 			echo
-			echo -e " 由于这个脚本太辣鸡了..所以分流的路径不能包含$red / $none或$red $ $none这两个符号.... "
+			echo -e " 由于这个脚本太安装了..所以分流的路径不能包含$red / $none或$red $ $none这两个符号.... "
 			echo
 			error
 			;;
@@ -494,7 +494,7 @@ proxy_site_config() {
 		case $proxy_site in
 		*[#$]*)
 			echo
-			echo -e " 由于这个脚本太辣鸡了..所以伪装的网址不能包含$red # $none或$red $ $none这两个符号.... "
+			echo -e " 由于这个脚本太安装了..所以伪装的网址不能包含$red # $none或$red $ $none这两个符号.... "
 			echo
 			error
 			;;
@@ -625,7 +625,7 @@ shadowsocks_password_config() {
 		case $sspass in
 		*[/$]*)
 			echo
-			echo -e " 由于这个脚本太辣鸡了..所以密码不能包含$red / $none或$red $ $none这两个符号.... "
+			echo -e " 由于这个脚本太安装了..所以密码不能包含$red / $none或$red $ $none这两个符号.... "
 			echo
 			error
 			;;
@@ -803,7 +803,7 @@ install_v2ray() {
 		cp -rf $(pwd)/* /etc/v2ray/233boy/v2ray
 	else
 		pushd /tmp
-		git clone https://github.com/gfw-breaker/v2ray -b "$_gitbranch" /etc/v2ray/233boy/v2ray --depth=1
+		git clone https://github.com/Alvin9999/v2ray -b "$_gitbranch" /etc/v2ray/233boy/v2ray --depth=1
 		popd
 
 	fi
@@ -1078,7 +1078,7 @@ local)
 	echo
 	echo -e " 你输入的这个参数 <$red $args $none> ...这个是什么鬼啊...脚本不认识它哇"
 	echo
-	echo -e " 这个辣鸡脚本仅支持输入$green local / online $none参数"
+	echo -e " 这个安装脚本仅支持输入$green local / online $none参数"
 	echo
 	echo -e " 输入$yellow local $none即是使用本地安装"
 	echo
