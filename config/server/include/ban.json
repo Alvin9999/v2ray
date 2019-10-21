@@ -1,7 +1,7 @@
 			{
 				"type": "field",
 				"domain": [
-					"domain:baidu.com"
+					"domain:360.cn"
 				],
 				"outboundTag": "blocked"
 			}
